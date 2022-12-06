@@ -2,7 +2,7 @@ const lines = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|'];
 let timer = 100;
 for (let i = 0; i < lines.length; i++) {
   setTimeout(() => {
-    process.stdout.write('\r' + lines[i] + '   ');
+    process.stdout.write('\r' + lines[i] + '\t');
   }, timer);
   timer += 200;
 }
